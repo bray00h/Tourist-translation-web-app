@@ -1,0 +1,4 @@
+File[[:space:]]transformer_translation.keras filter=lfs diff=lfs merge=lfs -text
+raw[[:space:]]combined[[:space:]]corpus.csv filter=lfs diff=lfs merge=lfs -text
+train.csv filter=lfs diff=lfs merge=lfs -text
+cleaned_en_fr_corpus.csv filter=lfs diff=lfs merge=lfs -text
