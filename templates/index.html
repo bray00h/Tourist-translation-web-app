@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourism Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <h2>🌍 Tourism Translator</h2>
+        <div>
+            <span>Welcome, {{ username }}</span>
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Translate English to French for Travel & Tourism</h1>
+            <p>Helpful translation support for tourists, hotels, airports, beaches, restaurants, and travel services.</p>
+        </div>
+    </section>
+
+    <main class="translator-card">
+        <h2>English to French Translator</h2>
+
+        <textarea id="inputText" placeholder="Type your English sentence here..."></textarea>
+
+        <button onclick="translateText()">Translate</button>
+
+        <div class="result-box">
+            <h3>French Translation</h3>
+            <p id="outputText">Your translation will appear here.</p>
+            <small id="sourceText"></small>
+        </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
